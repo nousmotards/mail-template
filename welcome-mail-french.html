@@ -1,192 +1,1190 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <title th:inline="text">[[${title}]]</title>
-    <style type="text/css">.ReadMsgBody { width: 100%; background-color: #ffffff; }
-    .ExternalClass { width: 100%; background-color: #ffffff; }
-    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
-    html { width: 100%; }
-    body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin: 0; padding: 0; }
-    table { border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto; }
-    table table table { table-layout: auto; }
-    img { display: block !important; }
-    table td { border-collapse: collapse; }
-    .yshortcuts a { border-bottom: none !important; }
-    img:hover { opacity:0.9 !important;}
-    a { color: #21b6ae; text-decoration: none; }
-    .textbutton a { font-family: 'open sans', arial, sans-serif !important; color: #ffffff !important; }
-    .text-link a { color: #95a5a6 !important; }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport">
 
-    @media only screen and (max-width: 640px) {
-        body { width: auto !important; }
-        table[class="table-inner"] { width: 90% !important; }
-        table[class="table-full"] { width: 100% !important; text-align: center !important; }
-    }
-    @media only screen and (max-width: 479px) {
-        body { width: auto !important; }
-        table[class="table-inner"] { width: 90% !important; }
-        table[class="table-full"] { width: 100% !important; text-align: center !important; }
-    }
+    <title>Bienvenue sur Nousmotards</title>
+    <style type="text/css">
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Custom Font */
+        @font-face {
+            font-family: 'source_sans_proitalic';
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.eot');
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.eot?#iefix') format('embedded-opentype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.woff2') format('woff2'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.woff') format('woff'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.ttf') format('truetype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.svg#source_sans_proitalic') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'source_sans_problack';
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.eot');
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.woff2') format('woff2'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.woff') format('woff'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.ttf') format('truetype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'source_sans_prolight';
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.eot');
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.woff') format('woff'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'source_sans_proregular';
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.eot');
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'source_sans_probold';
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.eot');
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'source_sans_prosemibold';
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.eot');
+            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.woff') format('woff'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        ::selection {
+            background: #ff2f2f; /* WebKit/Blink Browsers */
+        }
+
+        ::-moz-selection {
+            background: #ff2f2f; /* Gecko Browsers */
+        }
+
+        /* Responsive */
+        @media only screen and (max-width: 600px) {
+
+            /* Tables
+            parameters: width, alignment, padding */
+            table[class=scale] {
+                width: 100% !important;
+            }
+
+            table[class=scale-300] {
+                width: 100% !important;
+                height: 300px !important;
+            }
+
+            table[class=scale-90] {
+                width: 90% !important;
+            }
+
+            /* Td */
+            td[class=hide] {
+                display: none !important;
+                height: 0px !important;
+                font-size: 0px !important;
+            }
+
+            td[class=resetHeight] {
+                height: 55px !important
+            }
+
+            td[class=scale-left] {
+                width: 100% !important;
+                text-align: left !important;
+            }
+
+            td[class=scale-height] {
+                height: 70px !important;
+            }
+
+            td[class=scale-left-bottom] {
+                width: 100% !important;
+                text-align: left !important;
+                padding-bottom: 24px !important;
+            }
+
+            td[class=scale-left-top] {
+                width: 100% !important;
+                text-align: left !important;
+                padding-top: 24px !important;
+            }
+
+            td[class=scale-left-all] {
+                width: 100% !important;
+                text-align: left !important;
+                padding-top: 24px !important;
+                padding-bottom: 24px !important;
+            }
+
+            td[class=scale-center] {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            td[class=scale-center-both] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            td[class=scale-center-bottom] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-bottom: 24px !important;
+            }
+
+            td[class=scale-center-top] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-top: 24px !important;
+            }
+
+            td[class=scale-center-all] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-top: 24px !important;
+                padding-bottom: 24px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            td[class=scale-right] {
+                width: 100% !important;
+                text-align: right !important;
+            }
+
+            td[class=scale-right-bottom] {
+                width: 100% !important;
+                text-align: right !important;
+                padding-bottom: 24px !important;
+            }
+
+            td[class=scale-right-top] {
+                width: 100% !important;
+                text-align: right !important;
+                padding-top: 24px !important;
+            }
+
+            td[class=scale-right-all] {
+                width: 100% !important;
+                text-align: right !important;
+                padding-top: 24px !important;
+                padding-bottom: 24px !important;
+            }
+
+            td[class=scale-center-bottom-both] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-bottom: 24px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            td[class=scale-center-top-both] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-top: 24px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            td[class=reset] {
+                height: 0px !important;
+            }
+
+            td[class=scale-center-topextra] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-top: 84px !important;
+            }
+
+            img[class="reset"] {
+                display: inline !important;
+            }
+
+            img[class="scale-inline"] {
+                display: inline !important;
+            }
+
+        }
+
     </style>
 </head>
-<body>
-<table align="center" bgcolor="#494c50" border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tbody>
+
+<body style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+<!-- Header -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C"
+       width="100%">
     <tr>
-        <td align="center" th:attr="background=${background_image_url}" style="background-size:cover; background-position:top;">
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" width="600">
-                <tbody>
+        <td height="75" class="hide">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #b33631" width="620" data-bgcolor="Main BG">
                 <tr>
-                    <td height="10"> </td>
+                    <td height="30" style="font-size: 1px">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td align="center">
-                        <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="border-radius:4px; box-shadow: 0px -1px 0px #d4d2d2;" width="100%">
-                            <tbody>
+                    <td>
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale-300" width="330">
                             <tr>
-                                <td height="10"> </td>
+                                <td height="100" style="font-size: 1px" class="resetHeight">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td align="center">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" width="500"><!-- logo -->
-                                        <tbody>
+                                <td class="scale-center-both">
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale"
+                                           width="300">
                                         <tr>
-                                            <td align="center" style="line-height: 0px;"><img alt="logo" src="https://nousmotards-resources.s3.amazonaws.com/nm_full_300.png" style="display:block; line-height:0px; font-size:0px; border:0px;" /></td>
+                                            <td data-color="Header Headline" data-max="54" data-min="14"
+                                                data-size="Header Headline" style=
+                                                        "color: #FFFFFF; font-family: 'source_sans_probold', Helvetica, Arial, sans-serif; font-size: 31px;"
+                                                class="scale-center-both">APP NOUSMOTARDS
+                                            </td>
                                         </tr>
-                                        <!-- end logo -->
+
                                         <tr>
-                                            <td height="10"> </td>
-                                        </tr>
-                                        <!-- title -->
-                                        <tr>
-                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:28px; color:#3b3b3b; font-weight: bold; letter-spacing:4px;" th:inline="text">[[${title}]]</td>
-                                        </tr>
-                                        <!-- end title -->
-                                        <tr>
-                                            <td align="center">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="25">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td height="20" style="border-bottom:2px solid #ef4036;"> </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                            <td data-color="Header Subline" data-max="36" data-min="12"
+                                                data-size="Header Subline" style=
+                                                        "color: #FFFFFF; font-family: 'source_sans_proitalic';, Helvetica, Arial, sans-serif; font-size: 20px;"
+                                                class="scale-center-both">
+                                                Améliorez votre vie de motard<br>
+                                                <br>
+                                                <a href="https://play.google.com/store/apps/details?id=com.nousmotards.android&hl=fr">
+                                                    <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/btn_google.png"
+                                                         style="max-width: 300px;" border="0">
+                                                </a>
+                                                <a href="https://itunes.apple.com/us/app/nousmotards/id1191928573?mt=8">
+                                                    <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/btn_apple.png"
+                                                         style="max-width: 300px;" border="0">
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td height="40"> </td>
+                                            <td height="60" style="font-size: 1px">&nbsp;</td>
                                         </tr>
-                                        <!-- content -->
-                                        <tr>
-                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:18px; color:#7f8c8d; line-height:20px;" th:inline="text">[[${description}]]</td>
-                                        </tr>
-                                        </tbody>
                                     </table>
                                 </td>
                             </tr>
+                        </table>
+
+                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale-300" width="282">
                             <tr>
-                                <td height="45"> </td>
+                                <td class="scale-right" valign="bottom"><img
+                                        src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/header.png"
+                                        style="display: block; max-width: 282px;" class="scale-inline"
+                                        data-crop="false"></td>
                             </tr>
-                            <!-- option -->
-                            <tr>
-                                <td align="center" bgcolor="#f3f3f3" style=" border-bottom-left-radius:4px; border-bottom-right-radius:4px;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" width="290">
-                                        <tbody>
-                                        <tr>
-                                            <td height="15"> </td>
-                                        </tr>
-                                        <tr>
-                                            <td align="center" class="text-link"><!-- left -->
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="table-full" width="80">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:13px; color:#7f8c8d;"><a href="https://nms.bike/yPZDY" style="color:#7f8c8d !important">Nousmotards</a></td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!-- end left --><!--Space-->
-
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0" height="15" width="1">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td height="15" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                                                            <p style="padding-left: 24px;"> </p>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!--End Space--><!-- middle -->
-
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="table-full" width="80">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:13px; color:#7f8c8d;"><a href="https://nms.bike/4qDmQt" style="color:#7f8c8d !important">Contact</a></td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!-- end middle --><!--Space-->
-
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0" height="15" width="1">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td height="15" style="font-size: 0;line-height: 0;border-collapse: collapse;">
-                                                            <p style="padding-left: 24px;"> </p>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!--End Space--><!-- right -->
-
-                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="table-full" width="80">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:13px; color:#7f8c8d;"><a href="https://nms.bike/3n47WF" style="color:#7f8c8d !important">About</a></td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!-- end right --></td>
-                                        </tr>
-                                        <tr>
-                                            <td height="15"> </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <!-- end option -->
-                            </tbody>
                         </table>
                     </td>
                 </tr>
-                <tr>
-                    <td align="center" style="line-height:0px;"><img alt="img" src="https://storage.googleapis.com/nm-mailing/group/images/point.png" style="display:block; line-height:0px; font-size:0px; border:0px;" /></td>
-                </tr>
-                <!-- social -->
-                <tr>
-                    <td align="center">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="57">
-                            <tbody>
-                            <tr>
-                                <td align="center" style="line-height:0xp;" width="16"><a href="https://www.facebook.com/nousmotardsapp"><img alt="img" src="https://storage.googleapis.com/nm-mailing/group/images/facebook.png" style="display:block; line-height:0px; font-size:0px; border:0px;" /> </a></td>
-                                <td width="25"> </td>
-                                <td align="center" style="line-height:0xp;" width="16"><a href="https://twitter.com/Nousmotards"><img alt="img" src="https://storage.googleapis.com/nm-mailing/group/images/twitter.png" style="display:block; line-height:0px; font-size:0px; border:0px;" /> </a></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <!-- end social -->
-                <tr>
-                    <td height="30"> </td>
-                </tr>
-                <tr>
-                    <td height="30"> </td>
-                </tr>
-                </tbody>
             </table>
         </td>
     </tr>
-    </tbody>
+</table><!-- Intro -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620" data-bgcolor="Module BG">
+                <tr>
+                    <td height="50">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="490">
+                            <tr>
+                                <td align="center" data-color="Headlines" data-max="32" data-min="14"
+                                    data-size="Headlines" style=
+                                            "font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
+                                    Bienvenue sur Nousmotards!
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="10" valign="bottom">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
+                                        <tr>
+                                            <td height="3" style=
+                                                    "background-color: #ef4136; border-radius: 3px"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="30">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 14px; color: #1c1c1c; line-height: 24px;">
+                                    Tu es maintenant des nôtres et tu vas pouvoir faire plein de choses fantastiques. D’ailleurs voici quelques astuces pour profiter de l’application à 100%:
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="50" valign="bottom">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="550">
+                            <tr>
+                                <td height="1" style="background-color: #E8E8E8"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- What we do -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620">
+                <tr>
+                    <td height="50">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td style="border-bottom: 1px solid rgba(0,0,0,0.12)">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" width="530">
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="255">
+                                        <tr>
+                                            <td class="scale-center-both">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                       class="scale" width="40">
+                                                    <tr>
+                                                        <td class="scale-center-both"><img
+                                                                src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/icon_location.png"
+                                                                style="max-width: 40px;"></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="30">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+
+                                                <table align="right" border="0" cellpadding="0" cellspacing="0"
+                                                       class="scale" width="190">
+                                                    <tr>
+                                                        <td style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 15px; color: #ef4136;"
+                                                            class="scale-center-both">
+                                                            Complète ton profil
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="5" style="font-size: 1px;">&nbsp;</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;"
+                                                            class="scale-center-both">
+                                                            En renseignent ta localisation tu vas recevoir des notifications pour les balades à proximité
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="40">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="scale-center-both">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                       class="scale" width="40">
+                                                    <tr>
+                                                        <td class="scale-center-both"><img
+                                                                src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/icon_presentation.png"
+                                                                style="max-width: 40px;"></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="30">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+
+                                                <table align="right" border="0" cellpadding="0" cellspacing="0"
+                                                       class="scale" width="190">
+                                                    <tr>
+                                                        <td style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 15px; color: #ef4136;"
+                                                            class="scale-center-both">
+                                                            Présentation
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="5" style="font-size: 1px;">&nbsp;</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;"
+                                                            class="scale-center-both">
+                                                            Ajoute un message sur le mur public pour te présenter. Les membres te souhaiterons la bienvenue
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="40">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="scale-center-both">
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                       class="scale" width="40">
+                                                    <tr>
+                                                        <td class="scale-center-both"><img
+                                                                src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/icon_agenda.png"
+                                                                style="max-width: 40px;"></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="30">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+
+                                                <table align="right" border="0" cellpadding="0" cellspacing="0"
+                                                       class="scale" width="190">
+                                                    <tr>
+                                                        <td style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 15px; color: #ef4136;"
+                                                            class="scale-center-both">
+                                                            Balade à proximité
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="5" style="font-size: 1px;">&nbsp;</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;"
+                                                            class="scale-center-both">
+                                                            Dans les événements recherche les balades à proximité, tu n'as qu'à indiquer ta présence pour y participer
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="50">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="265">
+                                        <tr>
+                                            <td align="right" class="scale-center-both">
+                                                <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/iphone.png" style="max-width: 265px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="50">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- 2 column -->
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620">
+                <tr>
+                    <td>
+                        <!-- Image -->
+
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale"
+                               style="background-color: #ef4136" width="310">
+                            <tr>
+                                <td height="40">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" class="scale-center-both">
+                                    <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/col_img_1.png">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="20">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td valign="top">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
+                                        <tr>
+                                            <td height="3" style="border-radius: 3px; background-color: rgba(0,0,0,0.2)"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="40">&nbsp;</td>
+                            </tr>
+                        </table><!-- Text -->
+
+                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                               width="270">
+                            <tr>
+                                <td height="50">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td class="scale-center-both">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="230">
+                                        <tr>
+                                            <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
+                                                Roadbook sinueux
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="10" valign="bottom">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                       width="30">
+                                                    <tr>
+                                                        <td height="3" style="background-color: #ef4136; border-radius: 3px"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="30">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
+                                                Grâce à notre algorithme de génération de roadbook sinueux trouvez les meilleures routes autour de chez vous en quelques clics<br>
+                                                <br>
+                                                <a href="https://www.nousmotards.com/roadbook"
+                                                   style=
+                                                           "background-color: #ef4136; color: #FFFFFF; font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; text-decoration: none; padding: 10px 20px; border-radius: 3px;">
+                                                    Créer un roadbook</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="scale-height" height="20">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- 2 column -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+       style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620">
+                <tr>
+                    <td>
+                        <!-- Image -->
+
+                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale"
+                               style="background-color: #ef4136" width="310">
+                            <tr>
+                                <td height="40">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" class="scale-center-both">
+                                    <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/col_img_1.png">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="20">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td valign="top">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
+                                        <tr>
+                                            <td height="3" style=
+                                                    "border-radius: 3px; background-color: rgba(0,0,0,0.2)"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="40">&nbsp;</td>
+                            </tr>
+                        </table><!-- Text -->
+
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                               width="270">
+                            <tr>
+                                <td height="50">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td class="scale-center-both">
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="230">
+                                        <tr>
+                                            <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
+                                                Rideshare : suivi de trajet
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="10" valign="bottom">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                       width="30">
+                                                    <tr>
+                                                        <td height="3" style="background-color: #ef4136; border-radius: 3px"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="30">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
+                                                Partage ton trajet en temps réel à tes proches ou tes amis grâce à Rideshare<br>
+                                                <br>
+                                                <a href="https://rideshare.nousmotards.com" style="background-color: #ef4136; color: #FFFFFF; font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; text-decoration: none; padding: 10px 20px; border-radius: 3px;">
+                                                    Partager mon trajet</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="scale-height" height="20">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- 2 column -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+       style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620">
+                <tr>
+                    <td>
+                        <!-- Image -->
+
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale"
+                               style="background-color: #ef4136" width="310">
+                            <tr>
+                                <td height="40">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" class="scale-center-both"><img src="http://www.stampready.net/dashboard/templates/bucketlist/images/col_img_1.png">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="20">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td valign="top">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
+                                        <tr>
+                                            <td height="3" style="border-radius: 3px; background-color: rgba(0,0,0,0.2)"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="40">&nbsp;</td>
+                            </tr>
+                        </table><!-- Text -->
+
+                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                               width="270">
+                            <tr>
+                                <td height="50">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td class="scale-center-both">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="230">
+                                        <tr>
+                                            <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
+                                                Partage ta passion
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="10" valign="bottom">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
+                                                    <tr>
+                                                        <td height="3" style="background-color: #ef4136; border-radius: 3px"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="30">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
+                                                Echange avec les membres tes expériences et profite des bons conseils de motards aguéris<br>
+                                                <br>
+                                                <a href="#" style="background-color: #ef4136; color: #FFFFFF; font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; text-decoration: none; padding: 10px 20px; border-radius: 3px;">
+                                                Voir les actualités</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="scale-height" height="20">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- #### 2 col #### -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #F5F5F5" width="620">
+                <tr>
+                    <td style=
+                                "background-image: url(http://www.stampready.net/dashboard/templates/bucketlist/images/bg_cut.png); background-position: center bottom; background-repeat: repeat-x;">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="540">
+                            <tr>
+                                <td>
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="165">
+                                        <tr>
+                                            <td height="60">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="center" class="scale-center-both">
+                                                <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/badge.png">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="20">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
+                                                #1 application sociale moto en France
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="346">
+                                        <tr>
+                                            <td height="40">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="scale-center-both">
+                                                <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/iphone_winner.png"
+                                                style="max-width: 346px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- FAQ Column -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620">
+                <tr>
+                    <td height="20">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="540">
+                            <tr>
+                                <td style="border-bottom: 1px solid rgba(0,0,0,0.12)">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="265">
+                                        <tr>
+                                            <td class="scale-center-both" style="color: #ef4136; font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 15px;">
+                                                Can I
+                                                share my photo’s?
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="10" style="font-size: 10px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="265">
+                                        <tr>
+                                            <td class="scale-center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 24px;">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor<br>
+                                                incididunt ut labore et dolore magna.
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="10" style="font-size: 10px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- Clients -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+       style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620">
+                <tr>
+                    <td align="center">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="540">
+                            <tr>
+                                <td height="40">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
+                                    People are saying
+                                    nice things about us
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="10" valign="bottom">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
+                                        <tr>
+                                            <td height="3" style=
+                                                    "background-color: #ef4136; border-radius: 3px"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="30">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="160">
+                                        <tr>
+                                            <td align="center" class="scale-center-both" height="50">
+                                                <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/client_1.png" style="max-width: 160px;">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="center" class="scale-center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 24px;">
+                                                Dolore eu fugiat nulla pariatur.<br>
+                                                Excepteur sint occaecat cupidatat non. proident, sunt in culpa qui
+                                                officia dese
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30" style="font-size: 1px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale"
+                                           width="349">
+                                        <tr>
+                                            <td>
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                       class="scale" style=
+                                                               "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                                       width="160">
+                                                    <tr>
+                                                        <td align="center" class="scale-center-both" height="50">
+                                                            <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/client_2.png" style="max-width: 160px;">
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="center" class="scale-center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 24px;">
+                                                            Dolore eu fugiat nulla pariatur.<br>
+                                                            Excepteur sint occaecat cupidatat non. proident, sunt in
+                                                            culpa qui officia dese
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="30" style="font-size: 1px">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+
+                                                <table align="right" border="0" cellpadding="0" cellspacing="0"
+                                                       class="scale" style=
+                                                               "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                                       width="160">
+                                                    <tr>
+                                                        <td align="center" class="scale-center-both" height="50">
+                                                            <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/client_3.png" style="max-width: 160px;"></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td height="10" style="font-size: 1px;">&nbsp;</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td align="center" class="scale-center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 24px;">
+                                                            Dolore eu fugiat nulla pariatur.<br>
+                                                            Excepteur sint occaecat cupidatat non. proident, sunt in
+                                                            culpa qui officia dese
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="30" style="font-size: 1px">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- #### 2 col #### -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620">
+                <tr>
+                    <td height="30">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="560">
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="265">
+                                        <tr>
+                                            <td align="center" class="scale-center-both" height="70">
+                                                <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/facebook.png" style="max-width: 265px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
+                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
+                                           width="265">
+                                        <tr>
+                                            <td align="center" class="scale-center-both" height="70">
+                                                <img src="http://www.stampready.net/dashboard/templates/bucketlist/images/twitter.png" style="max-width: 265px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="50">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table><!-- #### footer #### -->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+       style="background-color: #1C1C1C" width="100%">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
+                   style="background-color: #FFFFFF" width="620">
+                <tr>
+                    <td align="center">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" width="560">
+                            <tr>
+                                <td align="center"
+                                    style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 12px; color: #1c1c1c; line-height: 24px;">
+                                    About us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Blog &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    |
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="sr_unsubscribe"
+                                                                                              style="text-decoration: none; color: #1c1c1c;">Unsubscribe</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="10">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" style=
+                                            "font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 12px; color: #1c1c1c; line-height: 18px;">
+                                    This can be a powerful line about copyright and terms.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="5" style="font-size: 1px;">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" style=
+                                            "font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 12px; color: #9b9a9c; line-height: 18px;">
+                                    Copyright © 2016. StampReady
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="50">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td height="75">&nbsp;</td>
+    </tr>
 </table>
 </body>
 </html>
