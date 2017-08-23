@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title th:inline="text">[[${title}]]</title>
+    <style type="text/css">.ReadMsgBody { width: 100%; background-color: #ffffff; }
+    .ExternalClass { width: 100%; background-color: #ffffff; }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+    html { width: 100%; }
+    body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin: 0; padding: 0; }
+    table { border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto; }
+    table table table { table-layout: auto; }
+    img { display: block !important; }
+    table td { border-collapse: collapse; }
+    .yshortcuts a { border-bottom: none !important; }
+    img:hover { opacity:0.9 !important;}
+    a { color: #21b6ae; text-decoration: none; }
+    .textbutton a { font-family: 'open sans', arial, sans-serif !important; color: #ffffff !important; }
+    .text-link a { color: #95a5a6 !important; }
+
+    @media only screen and (max-width: 640px) {
+        body { width: auto !important; }
+        table[class="table-inner"] { width: 90% !important; }
+        table[class="table-full"] { width: 100% !important; text-align: center !important; }
+    }
+    @media only screen and (max-width: 479px) {
+        body { width: auto !important; }
+        table[class="table-inner"] { width: 90% !important; }
+        table[class="table-full"] { width: 100% !important; text-align: center !important; }
+    }
+    </style>
+</head>
+<body>
+<table align="center" bgcolor="#494c50" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+    <tr>
+        <td align="center" th:attr="background=${background_image_url}" style="background-size:cover; background-position:top;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" width="600">
+                <tbody>
+                <tr>
+                    <td height="10"> </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" style="border-radius:4px; box-shadow: 0px -1px 0px #d4d2d2;" width="100%">
+                            <tbody>
+                            <tr>
+                                <td height="10"> </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" width="500"><!-- logo -->
+                                        <tbody>
+                                        <tr>
+                                            <td align="center" style="line-height: 0px;"><img alt="logo" src="https://nousmotards-resources.s3.amazonaws.com/nm_full_300.png" style="display:block; line-height:0px; font-size:0px; border:0px;" /></td>
+                                        </tr>
+                                        <!-- end logo -->
+                                        <tr>
+                                            <td height="10"> </td>
+                                        </tr>
+                                        <!-- title -->
+                                        <tr>
+                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:28px; color:#3b3b3b; font-weight: bold; letter-spacing:4px;" th:inline="text">[[${title}]]</td>
+                                        </tr>
+                                        <!-- end title -->
+                                        <tr>
+                                            <td align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="25">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td height="20" style="border-bottom:2px solid #ef4036;"> </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20"> </td>
+                                        </tr>
+                                        <!-- content -->
+                                        <tr>
+                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:18px; color:#ef4036; line-height:20px;" th:inline="text">[[${top_description}]]</td>
+                                        </tr>
+                                         <tr>
+                                            <td align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="25">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td height="20" style="border-bottom:2px solid #8f8f8f;"> </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- content -->
+                                        <tr>
+                                            <td height="20"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:18px; color:#7f8c8d; line-height:20px;" th:inline="text">[[${description}]]</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="40"> </td>
+                            </tr>
+                            <!-- button -->
+                            <tr>
+                                <td align="center">
+                                    <table align="center" bgcolor="#ef4036" border="0" cellpadding="0" cellspacing="0" class="textbutton" style=" border-radius:30px; box-shadow: 0px 1px 0px #ef4036;">
+                                        <tbody>
+                                        <tr>
+                                            <td align="center" color="#FFFFFF" height="55" style="font-family: 'Open Sans', Arial, sans-serif; font-size:18px; color:#FFFFFF !important; font-weight: bold;padding-left: 25px;padding-right: 25px;"><a th:href="${call_to_action_url}" style="color:#FFFFFF !important" th:text="${call_to_action_text}"></a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end button -->
+                            <tr>
+                                <td height="45"> </td>
+                            </tr>
+                            <!-- option -->
+                            <tr>
+                                <td align="center" bgcolor="#f3f3f3" style=" border-bottom-left-radius:4px; border-bottom-right-radius:4px;">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="table-inner" width="290">
+                                        <tbody>
+                                        <tr>
+                                            <td height="15"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" class="text-link"><!-- left -->
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="table-full" width="80">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:13px; color:#7f8c8d;"><a href="https://nms.bike/yPZDY" style="color:#7f8c8d !important">Nousmotards</a></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- end left --><!--Space-->
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" height="15" width="1">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td height="15" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                                            <p style="padding-left: 24px;"> </p>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!--End Space--><!-- middle -->
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="table-full" width="80">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:13px; color:#7f8c8d;"><a href="https://nms.bike/4qDmQt" style="color:#7f8c8d !important">Contact</a></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- end middle --><!--Space-->
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" height="15" width="1">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td height="15" style="font-size: 0;line-height: 0;border-collapse: collapse;">
+                                                            <p style="padding-left: 24px;"> </p>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!--End Space--><!-- right -->
+
+                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="table-full" width="80">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:13px; color:#7f8c8d;"><a href="https://nms.bike/3n47WF" style="color:#7f8c8d !important">About</a></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- end right --></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="15"> </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- end option -->
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="line-height:0px;"><img alt="img" src="https://storage.googleapis.com/nm-mailing/group/images/point.png" style="display:block; line-height:0px; font-size:0px; border:0px;" /></td>
+                </tr>
+                <!-- social -->
+                <tr>
+                    <td align="center">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="57">
+                            <tbody>
+                            <tr>
+                                <td align="center" style="line-height:0xp;" width="16"><a href="https://www.facebook.com/nousmotardsapp"><img alt="img" src="https://storage.googleapis.com/nm-mailing/group/images/facebook.png" style="display:block; line-height:0px; font-size:0px; border:0px;" /> </a></td>
+                                <td width="25"> </td>
+                                <td align="center" style="line-height:0xp;" width="16"><a href="https://twitter.com/Nousmotards"><img alt="img" src="https://storage.googleapis.com/nm-mailing/group/images/twitter.png" style="display:block; line-height:0px; font-size:0px; border:0px;" /> </a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <!-- end social -->
+                <tr>
+                    <td height="30"> </td>
+                </tr>
+                <tr>
+                    <td height="30"> </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
