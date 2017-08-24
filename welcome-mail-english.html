@@ -1,1186 +1,1183 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport"/>
-
+    <!--[if (gte mso 9)|(IE)]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- enable media queries for windows phone 8 -->
+    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+    <meta name="format-detection" content="date=no"> <!-- disable auto date linking in iOS -->
+    <meta name="format-detection" content="address=no"> <!-- disable auto address linking in iOS -->
+    <meta name="format-detection" content="email=no"> <!-- disable auto email linking in iOS -->
     <title>Welcome on Nousmotards</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+
     <style type="text/css">
+        /*basics*/
+        body {margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+        table {border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+        table td {border-collapse: collapse;}
+        img {-ms-interpolation-mode: bicubic; display: block; width:auto;max-width: auto;height: auto;margin: auto;}
+        /*Outlook*/
+        .ExternalClass {width: 100%;}
+        .ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div {line-height: inherit;}
+        .ReadMsgBody {width: 100%;background-color: #ffffff;}
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+        /*Anchors*/
+        td a {color: inherit; text-decoration: none;}
+        a {color: inherit; text-decoration: none;}
+        .undoreset a, .undoreset a:hover {text-decoration: none !important;}
+        .yshortcuts a {border-bottom: none !important;}
+        .ios-footer a {color: #aaaaaa !important;text-decoration: none;}
+        /*Campaign Monitor Paddings*/
+        table p, table h1, table h2, table h3, table h4{ margin-top:0!important;margin-right:0!important;margin-bottom:0!important;margin-left:0!important;padding-top:0!important;padding-right:0!important;padding-bottom:0!important;padding-left:0!important;display: inline-block!important;font-family: inherit!important;}
+    </style>
 
-        body {
-            margin: 0px;
-            padding: 0px;
+    <style type="text/css">
+        /*Responsive*/
+        @media screen and (max-width: 599px) {
+            td.img-responsive img {width:100%!important;max-width: 100%!important;height: auto!important;margin: auto;}
+            table.row {width: 100%!important;max-width: 100%!important;}
+            table.center-float, td.center-float {float: none!important;}
+            td.center-text{text-align: center!important;padding-left: 20px!important;padding-right: 20px!important;}
+            td.container-padding {width: 100%!important;padding-left: 20px!important;padding-right: 20px!important;}
+            table.hide-mobile, tr.hide-mobile, td.hide-mobile, br.hide-mobile {display: none!important;}
+            td.menu-container {text-align: center !important;}
+            td.autoheight {height: auto!important;}
+            td.box-bg-color.container-padding {padding: 0 10px!important;}
         }
 
-        /* Custom Font */
-        @font-face {
-            font-family: 'source_sans_proitalic';
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.eot');
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.eot?#iefix') format('embedded-opentype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.woff2') format('woff2'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.woff') format('woff'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.ttf') format('truetype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-italic-webfont.svg#source_sans_proitalic') format('svg');
-            font-weight: normal;
-            font-style: normal;
-
-        }
-
-        @font-face {
-            font-family: 'source_sans_problack';
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.eot');
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.woff2') format('woff2'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.woff') format('woff'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.ttf') format('truetype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
-            font-weight: normal;
-            font-style: normal;
-
-        }
-
-        @font-face {
-            font-family: 'source_sans_prolight';
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.eot');
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.woff') format('woff'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
-            font-weight: normal;
-            font-style: normal;
-
-        }
-
-        @font-face {
-            font-family: 'source_sans_proregular';
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.eot');
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.woff') format('woff'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
-            font-weight: normal;
-            font-style: normal;
-
-        }
-
-        @font-face {
-            font-family: 'source_sans_probold';
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.eot');
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.woff') format('woff'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
-            font-weight: normal;
-            font-style: normal;
-
-        }
-
-        @font-face {
-            font-family: 'source_sans_prosemibold';
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.eot');
-            src: url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.woff') format('woff'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.ttf') format('truetype'),
-            url('https://github.com/nousmotards/mail-template/raw/master/resources/fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
-            font-weight: normal;
-            font-style: normal;
-
-        }
-
-        ::selection {
-            background: #ff2f2f; /* WebKit/Blink Browsers */
-        }
-
-        ::-moz-selection {
-            background: #ff2f2f; /* Gecko Browsers */
-        }
-
-        /* Responsive */
-        @media only screen and (max-width: 600px) {
-
-            /* Tables
-            parameters: width, alignment, padding */
-            table[class=scale] {
-                width: 100% !important;
-            }
-
-            table[class=scale-300] {
-                width: 100% !important;
-                height: 300px !important;
-            }
-
-            table[class=scale-90] {
-                width: 90% !important;
-            }
-
-            /* Td */
-            td[class=hide] {
-                display: none !important;
-                height: 0px !important;
-                font-size: 0px !important;
-            }
-
-            td[class=resetHeight] {
-                height: 55px !important
-            }
-
-            td[class=scale-left] {
-                width: 100% !important;
-                text-align: left !important;
-            }
-
-            td[class=scale-height] {
-                height: 70px !important;
-            }
-
-            td[class=scale-left-bottom] {
-                width: 100% !important;
-                text-align: left !important;
-                padding-bottom: 24px !important;
-            }
-
-            td[class=scale-left-top] {
-                width: 100% !important;
-                text-align: left !important;
-                padding-top: 24px !important;
-            }
-
-            td[class=scale-left-all] {
-                width: 100% !important;
-                text-align: left !important;
-                padding-top: 24px !important;
-                padding-bottom: 24px !important;
-            }
-
-            td[class=scale-center] {
-                width: 100% !important;
-                text-align: center !important;
-            }
-
-            td[class=scale-center-both] {
-                width: 100% !important;
-                text-align: center !important;
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-            }
-
-            td[class=scale-center-bottom] {
-                width: 100% !important;
-                text-align: center !important;
-                padding-bottom: 24px !important;
-            }
-
-            td[class=scale-center-top] {
-                width: 100% !important;
-                text-align: center !important;
-                padding-top: 24px !important;
-            }
-
-            td[class=scale-center-all] {
-                width: 100% !important;
-                text-align: center !important;
-                padding-top: 24px !important;
-                padding-bottom: 24px !important;
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-            }
-
-            td[class=scale-right] {
-                width: 100% !important;
-                text-align: right !important;
-            }
-
-            td[class=scale-right-bottom] {
-                width: 100% !important;
-                text-align: right !important;
-                padding-bottom: 24px !important;
-            }
-
-            td[class=scale-right-top] {
-                width: 100% !important;
-                text-align: right !important;
-                padding-top: 24px !important;
-            }
-
-            td[class=scale-right-all] {
-                width: 100% !important;
-                text-align: right !important;
-                padding-top: 24px !important;
-                padding-bottom: 24px !important;
-            }
-
-            td[class=scale-center-bottom-both] {
-                width: 100% !important;
-                text-align: center !important;
-                padding-bottom: 24px !important;
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-            }
-
-            td[class=scale-center-top-both] {
-                width: 100% !important;
-                text-align: center !important;
-                padding-top: 24px !important;
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-            }
-
-            td[class=reset] {
-                height: 0px !important;
-            }
-
-            td[class=scale-center-topextra] {
-                width: 100% !important;
-                text-align: center !important;
-                padding-top: 84px !important;
-            }
-
-            img[class="reset"] {
-                display: inline !important;
-            }
-
-            img[class="scale-inline"] {
-                display: inline !important;
-            }
-
-        }
+        @media screen and (max-width: 480px) {}
+        @media screen and (max-width: 320px) {}
 
     </style>
+
 </head>
 
-<body style="margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
-<!-- Header -->
+<body class="body-bg-color" style="margin:0; padding:0;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#F4F4F4">
 
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C"
-       width="100%">
+<!-- Main Container -->
+<table border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
     <tr>
-        <td height="75" class="hide">&nbsp;</td>
-    </tr>
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #b33631" width="620" data-bgcolor="Main BG">
+        <td class="container-bg-color" align="center" valign="top" bgcolor="#F4F4F4">
+
+            <!-- hm-4 -->
+
+            <table border="0" width="800" align="center" cellpadding="0" cellspacing="0"     class="row" style="width:800px;max-width:800px;">
                 <tr>
-                    <td height="30" style="font-size: 1px">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>
-                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale-300" width="330">
+                    <td align="center" valign="top" class="petras-hm-4">
+
+                        <!-- bg-color -->
+                        <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
                             <tr>
-                                <td height="60" style="font-size: 1px" class="resetHeight">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="scale-center-both">
-                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale"
-                                           width="300">
+                                <td class="bg-color" align="center" valign="top"  bgcolor="#333333">
+
+                                    <!-- hm-4-bg-image -->
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" class="row" style="width:100%;max-width:100%;">
                                         <tr>
-                                            <td data-color="Header Headline" data-max="54" data-min="14"
-                                                data-size="Header Headline" style=
-                                                        "color: #FFFFFF; font-family: 'source_sans_probold', Helvetica, Arial, sans-serif; font-size: 31px;"
-                                                class="scale-center-both">
+                                            <td class="bg-image" align="center" valign="top"  background="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/header-menu-pict-4.jpg">
 
-                                                <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/nm_full_inverted_dark_primary.png"
-                                                     style="max-width: 300px;" border="0">
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td data-color="Header Subline" data-max="36" data-min="12"
-                                                data-size="Header Subline" style=
-                                                        "color: #FFFFFF; font-family: 'source_sans_proitalic';, Helvetica, Arial, sans-serif; font-size: 20px;"
-                                                class="scale-center-both">
-                                                <br>
-                                                <a href="https://play.google.com/store/apps/details?id=com.nousmotards.android&hl=fr">
-                                                    <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/btn_google.png"
-                                                         style="max-width: 300px;" border="0">
-                                                </a>
-                                                <a href="https://itunes.apple.com/us/app/nousmotards/id1191928573?mt=8">
-                                                    <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/btn_apple.png"
-                                                         style="max-width: 300px;" border="0">
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td height="40" style="font-size: 1px">&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale-300" width="282">
-                            <tr>
-                                <td class="scale-right" valign="bottom"><img
-                                        src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/header.png"
-                                        style="display: block; max-width: 282px;" class="scale-inline"
-                                        data-crop="false"></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- Intro -->
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620" data-bgcolor="Module BG">
-                <tr>
-                    <td height="50">&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td align="center">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="490">
-                            <tr>
-                                <td align="center" data-color="Headlines" data-max="32" data-min="14"
-                                    data-size="Headlines" style=
-                                            "font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
-                                    Welcome on Nousmotards!
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="10" valign="bottom">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
-                                        <tr>
-                                            <td height="3" style=
-                                                    "background-color: #ef4136; border-radius: 3px"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="30">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 14px; color: #1c1c1c; line-height: 24px;">
-                                    You are now one of us and you can do a lot of fantastic things. Besides here are some tricks to enjoy the application at 100%
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td height="50" valign="bottom">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="550">
-                            <tr>
-                                <td height="1" style="background-color: #E8E8E8"></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- What we do -->
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620">
-                <tr>
-                    <td height="50">&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td style="border-bottom: 1px solid rgba(0,0,0,0.12)">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" width="530">
-                            <tr>
-                                <td>
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="255">
-                                        <tr>
-                                            <td class="scale-center-both">
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                                       class="scale" width="40">
+                                                <!-- space-control -->
+                                                <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
                                                     <tr>
-                                                        <td class="scale-center-both"><img
-                                                                src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/icon_location.png"
-                                                                style="max-width: 40px;"></td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td height="30">&nbsp;</td>
+                                                        <td class="space-control-1" valign="middle" align="center" height="55">  &nbsp;  </td>
                                                     </tr>
                                                 </table>
+                                                <!-- space-control -->
 
-                                                <table align="right" border="0" cellpadding="0" cellspacing="0"
-                                                       class="scale" width="190">
+                                                <!-- container -->
+                                                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
                                                     <tr>
-                                                        <td style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 15px; color: #ef4136;"
-                                                            class="scale-center-both">
-                                                            Complete your profile
-                                                        </td>
-                                                    </tr>
+                                                        <td align="center" valign="top">
 
-                                                    <tr>
-                                                        <td height="5" style="font-size: 1px;">&nbsp;</td>
-                                                    </tr>
+                                                            <!-- container-2-columns -->
+                                                            <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
+                                                                <tr>
+                                                                    <td align="center" valign="top">
 
-                                                    <tr>
-                                                        <td style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;"
-                                                            class="scale-center-both">
-                                                            By setting your location you will receive notifications for nearby rides
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
+                                                                        <!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle"><![endif]-->
 
-                                        <tr>
-                                            <td height="40">&nbsp;</td>
-                                        </tr>
+                                                                        <!-- logo -->
+                                                                        <table width="180" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:180px;max-width:180px;">
+                                                                            <tr>
+                                                                                <td align="center" valign="middle">
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" align="left" class="center-float">
+                                                                                        <tr>
+                                                                                            <td class="logo" valign="middle" align="left" height="40">
+                                                                                                <a href="#" target="_blank"><img style="display:block;" src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/nm_full_inverted_dark_primary2.png"  border="0"  width="100" alt="logo" ></a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- logo -->
 
-                                        <tr>
-                                            <td class="scale-center-both">
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                                       class="scale" width="40">
-                                                    <tr>
-                                                        <td class="scale-center-both"><img
-                                                                src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/icon_presentation.png"
-                                                                style="max-width: 40px;"></td>
-                                                    </tr>
+                                                                        <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
 
-                                                    <tr>
-                                                        <td height="30">&nbsp;</td>
-                                                    </tr>
-                                                </table>
+                                                                        <!-- gap -->
+                                                                        <table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:20px;max-width:20px;">
+                                                                            <tr>
+                                                                                <td valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;"></td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- gap -->
 
-                                                <table align="right" border="0" cellpadding="0" cellspacing="0"
-                                                       class="scale" width="190">
-                                                    <tr>
-                                                        <td style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 15px; color: #ef4136;"
-                                                            class="scale-center-both">
-                                                            Presentation
-                                                        </td>
-                                                    </tr>
+                                                                        <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
+                                                                        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 
-                                                    <tr>
-                                                        <td height="5" style="font-size: 1px;">&nbsp;</td>
-                                                    </tr>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- container-2-columns -->
 
-                                                    <tr>
-                                                        <td style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;"
-                                                            class="scale-center-both">
-                                                            Add a message on the public wall to introduce yourself. Members will welcome you
+                                                            <!-- space-control -->
+                                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td class="space-control-2" valign="middle" align="center" height="55">  &nbsp;  </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- space-control -->
+
+                                                            <!-- title-container -->
+                                                            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center" class="title-width">
+                                                                        <!-- title -->
+                                                                        <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="left" class="custom-width" style="width:100%;">
+                                                                            <tr>
+                                                                                <td class="title center-text"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:46px; line-height:54px; font-style:normal;font-weight:normal;color:#ffffff;text-decoration:none;letter-spacing: 0px;">
+                                                                                    <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]--> WELCOME ON NOUSMOTARDS <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- title -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- title-container -->
+
+                                                            <!-- space -->
+                                                            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center" height="25">  &nbsp;  </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- space -->
+
+                                                            <!-- text-container -->
+                                                            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center" class="text-width">
+                                                                        <!-- text -->
+                                                                        <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="left" class="custom-width" style="width:100%;">
+                                                                            <tr>
+                                                                                <td class="text center-text"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:14px; line-height:24px; font-style:normal;font-weight:normal; color:#ffffff;text-decoration:none;letter-spacing: 0px;">
+                                                                                    <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]--> Nousmotards is a community network developed by<br> passionate bikers and animated by the community itsel f. <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- text -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- text-container -->
+
+                                                            <!-- space -->
+                                                            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center" height="25">  &nbsp;  </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- space -->
+
+                                                            <!-- 2 buttons in row - left align -->
+                                                            <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center" class="buttons-row">
+
+                                                                        <!-- Buttons-Container -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" class="center-float">
+                                                                            <tr>
+                                                                                <td align="center" valign="middle">
+                                                                                    <a href="https://itunes.apple.com/us/app/nousmotards/id1191928573?mt=8">
+                                                                                        <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/btn_apple.png" style="max-width: 300px;" border="0"/>
+                                                                                    </a>
+                                                                                </td>
+                                                                                <td align="center" valign="middle">
+                                                                                    <a href="https://play.google.com/store/apps/details?id=com.nousmotards.android&hl=fr">
+                                                                                        <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/btn_google.png" style="max-width: 300px;" border="0"/>
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- Buttons-Container -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- 2 buttons in row - left align -->
+
+                                                            <!-- space-control -->
+                                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td class="space-control-3" valign="middle" align="center" height="25">  &nbsp;  </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- space-control -->
+
+                                                            <!-- Socials -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" class="row" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center">
+
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" class="center-float">
+                                                                            <tr>
+                                                                                <td valign="middle" align="center" height="40">
+                                                                                    <!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle"><![endif]-->
+                                                                                    <table  border="0" cellpadding="0" cellspacing="0" style="display:inline-block;vertical-align:middle;">
+                                                                                        <tr>
+                                                                                            <td align="center" valign="middle" width="5"></td>
+                                                                                            <td align="center" valign="middle">
+                                                                                                <a href="https://www.facebook.com/nousmotardsapp" target="_blank">
+                                                                                                    <img style="display:block;" src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/facebook-white.png"  border="0"  width="36" alt="facebook" >
+                                                                                                </a>
+                                                                                            </td>
+                                                                                            <td align="center" valign="middle" width="5"></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
+                                                                                    <table  border="0" cellpadding="0" cellspacing="0" style="display:inline-block;vertical-align:middle;">
+                                                                                        <tr>
+                                                                                            <td align="center" valign="middle" width="5"></td>
+                                                                                            <td align="center" valign="middle"><a href="#" target="_blank">
+                                                                                                <img style="display:block;" src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/twitter-white.png"  border="0"  width="36" alt="twitter" ></a>
+                                                                                            </td>
+                                                                                            <td align="center" valign="middle" width="5"></td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!--[if (gte mso 9)|(IE)]></td>
+                                                                                </tr></table><![endif]-->
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- Socials -->
+
                                                         </td>
                                                     </tr>
                                                 </table>
-                                            </td>
-                                        </tr>
+                                                <!-- container -->
 
-                                        <tr>
-                                            <td height="40">&nbsp;</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="scale-center-both">
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                                       class="scale" width="40">
+                                                <!-- space-control -->
+                                                <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
                                                     <tr>
-                                                        <td class="scale-center-both"><img
-                                                                src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/icon_agenda.png"
-                                                                style="max-width: 40px;"></td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td height="30">&nbsp;</td>
+                                                        <td class="space-control-4" valign="middle" align="center" height="55">  &nbsp;  </td>
                                                     </tr>
                                                 </table>
+                                                <!-- space-control -->
 
-                                                <table align="right" border="0" cellpadding="0" cellspacing="0"
-                                                       class="scale" width="190">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- hm-4-bg-image -->
+
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- bg-color -->
+
+                    </td>
+                </tr>
+            </table>
+
+            <!-- hm-4 -->
+
+            <!-- preface-1 -->
+
+            <table border="0" width="800" align="center" cellpadding="0" cellspacing="0"     class="row" style="width:800px;max-width:800px;">
+                <tr>
+                    <td align="center" valign="top" class="petras-preface-1">
+
+                        <!-- bg-color -->
+                        <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                            <tr>
+                                <td class="bg-color" align="center" valign="top"  bgcolor="#FFFFFF">
+
+                                    <!-- gap -->
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!-- gap -->
+
+                                    <!-- container -->
+                                    <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
+                                        <tr>
+                                            <td align="center" valign="top" class="container-padding">
+
+                                                <!-- title -->
+                                                <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
                                                     <tr>
-                                                        <td style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 15px; color: #ef4136;"
-                                                            class="scale-center-both">
-                                                            Ride nearby
+                                                        <td class="title"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:30px; line-height:35px; font-style:normal;font-weight:lighter;color:#000000;text-decoration:none;letter-spacing: 2px;">
+                                                            <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]--> 1st BIKERS SOCIAL APP <!--[if (gte mso 9)|(IE)]></font><![endif]-->
                                                         </td>
                                                     </tr>
+                                                </table>
+                                                <!-- title -->
 
+                                                <!-- splitter with gaps -->
+                                                <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
                                                     <tr>
-                                                        <td height="5" style="font-size: 1px;">&nbsp;</td>
+                                                        <td align="center" valign="middle" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
                                                     </tr>
-
                                                     <tr>
-                                                        <td style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;"
-                                                            class="scale-center-both">
-                                                            Search the nearby rides from events, you only have to indicate your presence to participate
+                                                        <td valign="middle" align="center" height="1" style="font-size:1px;line-height:1px;">
+                                                            <!-- line -->
+                                                            <table width="40" border="0" cellpadding="0" cellspacing="0" align="left" style="width:60px;max-width:60px;">
+                                                                <tr>
+                                                                    <td class="splitter" align="center" valign="middle" height="1"  bgcolor="#b33631" style="font-size:1px;line-height:1px;">  &nbsp;  </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- line -->
                                                         </td>
                                                     </tr>
-
-                                                    <tr>
-                                                        <td height="50">&nbsp;</td>
-                                                    </tr>
                                                 </table>
+                                                <!-- splitter with gaps -->
+
                                             </td>
                                         </tr>
                                     </table>
+                                    <!-- container -->
 
-                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="265">
+                                    <!-- gap -->
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
                                         <tr>
-                                            <td align="right" class="scale-center-both">
-                                                <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/iphone.png" style="max-width: 265px;">
-                                            </td>
+                                            <td valign="middle" align="center" height="15" style="font-size:15px;line-height:15px;">&nbsp;</td>
                                         </tr>
                                     </table>
-                                </td>
-                            </tr>
+                                    <!-- gap -->
 
-                            <tr>
-                                <td height="50">&nbsp;</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- 2 column -->
-
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620">
-                <tr>
-                    <td>
-                        <!-- Image -->
-
-                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale"
-                               style="background-color: #ef4136" width="310">
-                            <tr>
-                                <td height="40">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td align="center" class="scale-center-both">
-                                    <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/col_img_1.png">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="20">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td valign="top">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
+                                    <!-- container-2-columns -->
+                                    <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
                                         <tr>
-                                            <td height="3" style="border-radius: 3px; background-color: rgba(0,0,0,0.2)"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
+                                            <td align="center" valign="top" class="container-padding">
 
-                            <tr>
-                                <td height="40">&nbsp;</td>
-                            </tr>
-                        </table><!-- Text -->
+                                                <!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle"><![endif]-->
 
-                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                               width="270">
-                            <tr>
-                                <td height="50">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td class="scale-center-both">
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="230">
-                                        <tr>
-                                            <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
-                                                Roadbook sinueux
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="10" valign="bottom">
-                                                <table align="center" border="0" cellpadding="0" cellspacing="0"
-                                                       width="30">
+                                                <!-- column -->
+                                                <table width="280" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:280px;max-width:280px;">
                                                     <tr>
-                                                        <td height="3" style="background-color: #ef4136; border-radius: 3px"></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
+                                                        <td align="center" valign="middle" class="autoheight" height="200">
 
-                                        <tr>
-                                            <td height="30">&nbsp;</td>
-                                        </tr>
+                                                            <!-- text -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="text"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:13px; line-height:23px; font-style:normal;font-weight:normal; color:#000000;text-decoration:none;letter-spacing: 0px;">
 
-                                        <tr>
-                                            <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
-                                                Thanks to our algorithm of winding roadbook generation. Find the best roads around you in a few clicks<br>
-                                                <br>
-                                                <a href="https://www.nousmotards.com/roadbook"
-                                                   style=
-                                                           "background-color: #ef4136; color: #FFFFFF; font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; text-decoration: none; padding: 10px 20px; border-radius: 3px;">
-                                                    Create roadbook</a>
-                                            </td>
-                                        </tr>
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        You are now one of us and you can do a lot of fantastic things. Besides here are some tricks to enjoy the application at 100%
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
 
-                                        <tr>
-                                            <td class="scale-height" height="20">&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- 2 column -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- text -->
 
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-       style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620">
-                <tr>
-                    <td>
-                        <!-- Image -->
-
-                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale"
-                               style="background-color: #ef4136" width="310">
-                            <tr>
-                                <td height="40">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td align="center" class="scale-center-both">
-                                    <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/col_img_2.png">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="20">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td valign="top">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
-                                        <tr>
-                                            <td height="3" style=
-                                                    "border-radius: 3px; background-color: rgba(0,0,0,0.2)"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="40">&nbsp;</td>
-                            </tr>
-                        </table><!-- Text -->
-
-                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                               width="270">
-                            <tr>
-                                <td height="50">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td class="scale-center-both">
-                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="230">
-                                        <tr>
-                                            <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
-                                                Rideshare : real time ride tracking
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="10" valign="bottom">
-                                                <table align="center" border="0" cellpadding="0" cellspacing="0"
-                                                       width="30">
-                                                    <tr>
-                                                        <td height="3" style="background-color: #ef4136; border-radius: 3px"></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="30">&nbsp;</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
-                                                Share your journey in real time with friends or family with Rideshare<br>
-                                                <br>
-                                                <a href="https://rideshare.nousmotards.com" style="background-color: #ef4136; color: #FFFFFF; font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; text-decoration: none; padding: 10px 20px; border-radius: 3px;">
-                                                    Share my real time ride</a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="scale-height" height="20">&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- 2 column -->
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-       style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620">
-                <tr>
-                    <td>
-                        <!-- Image -->
-
-                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale"
-                               style="background-color: #ef4136" width="310">
-                            <tr>
-                                <td height="40">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td align="center" class="scale-center-both"><img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/col_img_3.png">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="20">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td valign="top">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
-                                        <tr>
-                                            <td height="3" style="border-radius: 3px; background-color: rgba(0,0,0,0.2)"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="40">&nbsp;</td>
-                            </tr>
-                        </table><!-- Text -->
-
-                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                               width="270">
-                            <tr>
-                                <td height="50">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td class="scale-center-both">
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="230">
-                                        <tr>
-                                            <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
-                                                Share your passion
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="10" valign="bottom">
-                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
-                                                    <tr>
-                                                        <td height="3" style="background-color: #ef4136; border-radius: 3px"></td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="30">&nbsp;</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
-                                                Exchange with the members your experiences and benefit from the good advice of experienced bikers<br>
-                                                <br>
-                                                <a href="https://www.nousmotards.com" style="background-color: #ef4136; color: #FFFFFF; font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; text-decoration: none; padding: 10px 20px; border-radius: 3px;">
-                                                See the news</a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="scale-height" height="20">&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- #### 2 col #### -->
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #F5F5F5" width="620">
-                <tr>
-                    <td style="background-image: url('https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/bg_cut.png'); background-position: center bottom; background-repeat: repeat-x;">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="540">
-                            <tr>
-                                <td>
-                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="165">
-                                        <tr>
-                                            <td height="60">&nbsp;</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td align="center" class="scale-center-both">
-                                                <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/badge.png">
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="20">&nbsp;</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
-                                                #1 Application social moto in Europe
-                                            </td>
-                                        </tr>
-                                    </table>
-
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="346">
-                                        <tr>
-                                            <td height="40">&nbsp;</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="scale-center-both">
-                                                <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/iphone_winner.png"
-                                                style="max-width: 346px;">
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- FAQ Column -->
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620">
-                <tr>
-                    <td height="20">&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="540">
-                            <tr>
-                                <td style="border-bottom: 1px solid rgba(0,0,0,0.12)">
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="265">
-                                        <tr>
-                                            <td class="scale-center-both" style="color: #ef4136; font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 15px;">
-                                                Share your location
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="10" style="font-size: 10px;">&nbsp;</td>
-                                        </tr>
-                                    </table>
-
-                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="265">
-                                        <tr>
-                                            <td class="scale-center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
-                                                The team invites you to be careful when sharing your place of residence.</br>
-                                                For your safety do not indicate your precise address.
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="10" style="font-size: 10px;">&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- Clients -->
-
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-       style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620">
-                <tr>
-                    <td align="center">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="540">
-                            <tr>
-                                <td height="40">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td align="center" style="font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif; font-size: 20px; color: #1c1c1c;">
-                                    They talk about Nousmotards
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="10" valign="bottom">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="30">
-                                        <tr>
-                                            <td height="3" style=
-                                                    "background-color: #ef4136; border-radius: 3px"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td height="30">&nbsp;</td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="160">
-                                        <tr>
-                                            <td align="center" class="scale-center-both" height="50">
-                                                <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/client_1.png" style="max-width: 160px;">
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td height="10" style="font-size: 1px;">&nbsp;</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td align="center" class="scale-center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
-                                                In addition to a friendly and welcoming community as well as the classic functionalities of a social network, Nousmotards offers more and more services
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td height="30" style="font-size: 1px">&nbsp;</td>
-                                        </tr>
-                                    </table>
-
-                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale"
-                                           width="349">
-                                        <tr>
-                                            <td>
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                                       class="scale" style=
-                                                               "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                                       width="160">
-                                                    <tr>
-                                                        <td align="center" class="scale-center-both" height="50">
-                                                            <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/client_2.png" style="max-width: 160px;">
                                                         </td>
                                                     </tr>
+                                                </table>
+                                                <!-- column -->
 
-                                                    <tr>
-                                                        <td height="10" style="font-size: 1px;">&nbsp;</td>
-                                                    </tr>
+                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
 
+                                                <!-- gap -->
+                                                <table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:20px;max-width:20px;">
                                                     <tr>
-                                                        <td align="center" class="scale-center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
-                                                            What I appreciated with this Swiss knife app is especially the possibility to share strolls on the fly with his friends.
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td height="30" style="font-size: 1px">&nbsp;</td>
+                                                        <td valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;"></td>
                                                     </tr>
                                                 </table>
+                                                <!-- gap -->
 
-                                                <table align="right" border="0" cellpadding="0" cellspacing="0"
-                                                       class="scale" style=
-                                                               "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                                       width="160">
-                                                    <tr>
-                                                        <td align="center" class="scale-center-both" height="50">
-                                                            <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/client_3.png" style="max-width: 160px;"></td>
-                                                    </tr>
+                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
 
+                                                <!-- column -->
+                                                <table width="300" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:300px;max-width:300px;">
                                                     <tr>
-                                                        <td height="10" style="font-size: 1px;">&nbsp;</td>
-                                                    </tr>
+                                                        <td align="center" valign="top">
 
-                                                    <tr>
-                                                        <td align="center" class="scale-center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 13px; color: #1c1c1c; line-height: 20px;">
-                                                            France is 2 million bikers, thousands of enthusiasts of the two wheels and kilometers of roads to crisscross. <br/> <strong> And if it were possible to bring all these ingredients together?</strong>
+                                                            <!-- image-responsive -->
+                                                            <table  width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td align="center" valign="top" class="img-responsive">
+                                                                        <img style="display:block;" src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/preface-1-pict-1.jpg"  border="0"  width="300" alt="picture" >
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- image-responsive -->
+
                                                         </td>
                                                     </tr>
+                                                </table>
+                                                <!-- column -->
+
+                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- container-2-columns -->
+
+                                    <!-- gap -->
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!-- gap -->
+
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- bg-color -->
+
+                    </td>
+                </tr>
+            </table>
+
+            <!-- preface-1 -->
+
+            <!-- services-3col-9 -->
+
+            <table border="0" width="800" align="center" cellpadding="0" cellspacing="0"     class="row" style="width:800px;max-width:800px;">
+                <tr>
+                    <td align="center" valign="top" class="petras-services-3col-9">
+
+                        <!-- bg-color -->
+                        <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                            <tr>
+                                <td class="bg-color" align="center" valign="top"  bgcolor="#FFFFFF">
+
+                                    <!-- space -->
+                                    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="30">  &nbsp;  </td>
+                                        </tr>
+                                    </table>
+                                    <!-- space -->
+
+                                    <!-- container-3-columns -->
+                                    <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
+                                        <tr>
+                                            <td align="center" valign="top" class="container-padding">
+
+                                                <!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle"><![endif]-->
+
+                                                <!-- column -->
+                                                <table width="180" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:180px;max-width:180px;">
                                                     <tr>
-                                                        <td height="30" style="font-size: 1px">&nbsp;</td>
+                                                        <td align="center" valign="top">
+                                                            <!-- subtitle -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="subtitle"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:12px; line-height:14px; font-style:normal;font-weight:bold;color:#b33631;text-decoration:none;letter-spacing: 1px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        TO BEGIN
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- subtitle -->
+                                                            <!-- title -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="title"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:16px; line-height:19px; font-style:normal;font-weight:bold;color:#000000;text-decoration:none;letter-spacing: 1px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        COMPLETE YOUR PROFILE
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- title -->
+                                                            <!-- splitter with gaps -->
+                                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td align="center" valign="middle" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="middle" align="center" height="1" style="font-size:1px;line-height:1px;">
+                                                                        <!-- line -->
+                                                                        <table width="60" border="0" cellpadding="0" cellspacing="0" align="left" style="width:60px;max-width:60px;">
+                                                                            <tr>
+                                                                                <td class="splitter" align="center" valign="middle" height="1"  bgcolor="#b33631" style="font-size:1px;line-height:1px;">  &nbsp;  </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- line -->
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center" valign="middle" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- splitter with gaps -->
+                                                            <!-- text -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="text"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:13px; line-height:23px; font-style:normal;font-weight:normal; color:#000000;text-decoration:none;letter-spacing: 0px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        By entering your location you will receive notifications for nearby rides
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- text -->
+                                                            <!-- space -->
+                                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center" height="10" style="font-size:10px;line-height:10px;">  &nbsp;  </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- space -->
+                                                            <!-- Button-Border -->
+                                                            <table  border="0" cellpadding="0" cellspacing="0" align="left" style="display:inline-block;vertical-align:middle;">
+                                                                <tr>
+                                                                    <td align="center" valign="top">
+                                                                        <!-- Container -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="center" class="center-float" style="display:inline-block;vertical-align:middle;">
+                                                                            <tr>
+                                                                                <td class="button-border" valign="middle" align="center"     style="border: 2px solid #b33631; border-radius: 0px;">
+                                                                                    <!-- Btn -->
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="center-float">
+                                                                                        <tr>
+                                                                                            <td colspan="3" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td width="13"></td>
+                                                                                            <td class="button-border-style"      valign="middle" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:13px;line-height:15px;font-style:normal;font-weight:bold;color:#b33631;text-decoration:none;letter-spacing:1px;">
+
+                                                                                                <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                                                <a href="https://www.nousmotards.com/mon-compte" style="text-decoration: none;color:#b33631">&gt; MY PROFILE</a>
+                                                                                                <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                                            </td>
+                                                                                            <td width="13"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="3" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!-- Btn -->
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- Container -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- Button-Border -->
+                                                        </td>
                                                     </tr>
                                                 </table>
+                                                <!-- column -->
+
+                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
+
+                                                <!-- gap -->
+                                                <table width="30" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:30px;max-width:30px;">
+                                                    <tr>
+                                                        <td valign="middle" align="center" height="60"></td>
+                                                    </tr>
+                                                </table>
+                                                <!-- gap -->
+
+                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
+
+                                                <!-- column -->
+                                                <table width="180" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:180px;max-width:180px;">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <!-- subtitle -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="subtitle"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:12px; line-height:14px; font-style:normal;font-weight:bold;color:#b33631;text-decoration:none;letter-spacing: 1px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        THEN
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- subtitle -->
+                                                            <!-- title -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="title"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:16px; line-height:19px; font-style:normal;font-weight:bold;color:#000000;text-decoration:none;letter-spacing: 1px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        PRESENTATION
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- title -->
+                                                            <!-- splitter with gaps -->
+                                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td align="center" valign="middle" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="middle" align="center" height="1" style="font-size:1px;line-height:1px;">
+                                                                        <!-- line -->
+                                                                        <table width="60" border="0" cellpadding="0" cellspacing="0" align="left" style="width:60px;max-width:60px;">
+                                                                            <tr>
+                                                                                <td class="splitter" align="center" valign="middle" height="1"  bgcolor="#b33631" style="font-size:1px;line-height:1px;">  &nbsp;  </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- line -->
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center" valign="middle" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- splitter with gaps -->
+                                                            <!-- text -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="text"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:13px; line-height:23px; font-style:normal;font-weight:normal; color:#000000;text-decoration:none;letter-spacing: 0px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        Add a message on the public wall to introduce yourself. Members will welcome you
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- text -->
+                                                            <!-- space -->
+                                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center" height="10" style="font-size:10px;line-height:10px;">  &nbsp;  </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- space -->
+                                                            <!-- Button-Border -->
+                                                            <table  border="0" cellpadding="0" cellspacing="0" align="left" style="display:inline-block;vertical-align:middle;">
+                                                                <tr>
+                                                                    <td align="center" valign="top">
+                                                                        <!-- Container -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" class="center-float" style="display:inline-block;vertical-align:middle;">
+                                                                            <tr>
+                                                                                <td class="button-border" valign="middle" align="center"     style="border: 2px solid #b33631; border-radius: 0px;">
+                                                                                    <!-- Btn -->
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="center-float">
+                                                                                        <tr>
+                                                                                            <td colspan="3" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td width="13"></td>
+                                                                                            <td class="button-border-style"      valign="middle" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:13px;line-height:15px;font-style:normal;font-weight:bold;color:#b33631;text-decoration:none;letter-spacing:1px;">
+
+                                                                                                <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                                                <a href="https://www.nousmotards.com/actualites" style="text-decoration: none;color:#b33631">&gt; NEWS</a>
+                                                                                                <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                                            </td>
+                                                                                            <td width="13"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="3" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!-- Btn -->
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- Container -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- Button-Border -->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- column -->
+
+                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
+
+                                                <!-- gap -->
+                                                <table width="30" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:30px;max-width:30px;">
+                                                    <tr>
+                                                        <td valign="middle" align="center" height="60"></td>
+                                                    </tr>
+                                                </table>
+                                                <!-- gap -->
+
+                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
+
+                                                <!-- column -->
+                                                <table width="180" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:180px;max-width:180px;">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <!-- subtitle -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="subtitle"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:12px; line-height:14px; font-style:normal;font-weight:bold;color:#b33631;text-decoration:none;letter-spacing: 1px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        AND FINALLY
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- subtitle -->
+                                                            <!-- title -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="title"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:16px; line-height:19px; font-style:normal;font-weight:bold;color:#000000;text-decoration:none;letter-spacing: 1px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        RIDE
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- title -->
+                                                            <!-- splitter with gaps -->
+                                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td align="center" valign="middle" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="middle" align="center" height="1" style="font-size:1px;line-height:1px;">
+                                                                        <!-- line -->
+                                                                        <table width="60" border="0" cellpadding="0" cellspacing="0" align="left" style="width:60px;max-width:60px;">
+                                                                            <tr>
+                                                                                <td class="splitter" align="center" valign="middle" height="1"  bgcolor="#b33631" style="font-size:1px;line-height:1px;">  &nbsp;  </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- line -->
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center" valign="middle" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- splitter with gaps -->
+                                                            <!-- text -->
+                                                            <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                                <tr>
+                                                                    <td class="text"      valign="middle" align="left" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:13px; line-height:23px; font-style:normal;font-weight:normal; color:#000000;text-decoration:none;letter-spacing: 0px;">
+
+                                                                        <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                        In the events search the rides nearby, you only have to indicate your presence to participate
+                                                                        <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- text -->
+                                                            <!-- space -->
+                                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                                <tr>
+                                                                    <td valign="middle" align="center" height="10" style="font-size:10px;line-height:10px;">  &nbsp;  </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- space -->
+                                                            <!-- Button-Border -->
+                                                            <table  border="0" cellpadding="0" cellspacing="0" align="left" style="display:inline-block;vertical-align:middle;">
+                                                                <tr>
+                                                                    <td align="center" valign="top">
+                                                                        <!-- Container -->
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" class="center-float" style="display:inline-block;vertical-align:middle;">
+                                                                            <tr>
+                                                                                <td class="button-border" valign="middle" align="center"     style="border: 2px solid #b33631; border-radius: 0px;">
+                                                                                    <!-- Btn -->
+                                                                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="center-float">
+                                                                                        <tr>
+                                                                                            <td colspan="3" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td width="13"></td>
+                                                                                            <td class="button-border-style"      valign="middle" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:13px;line-height:15px;font-style:normal;font-weight:bold;color:#b33631;text-decoration:none;letter-spacing:1px;">
+
+                                                                                                <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                                                                <a href="https://www.nousmotards.com/evenement" style="text-decoration: none;color:#b33631">&gt; SEARCH</a>
+                                                                                                <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                                                            </td>
+                                                                                            <td width="13"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="3" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <!-- Btn -->
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- Container -->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <!-- Button-Border -->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- column -->
+
+                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
                                             </td>
                                         </tr>
                                     </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table><!-- #### 2 col #### -->
+                                    <!-- container-3-columns -->
 
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620">
-                <tr>
-                    <td height="30">&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale-90" width="560">
-                            <tr>
-                                <td>
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="scale" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="265">
+                                    <!-- space -->
+                                    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
                                         <tr>
-                                            <td align="center" class="scale-center-both" height="70">
-                                                <a href="https://www.facebook.com/nousmotardsapp">
-                                                <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/facebook.png" style="max-width: 265px;" border="0">
-                                                </a>
-                                            </td>
+                                            <td valign="middle" align="center" height="30">  &nbsp;  </td>
                                         </tr>
                                     </table>
+                                    <!-- space -->
 
-                                    <table align="right" border="0" cellpadding="0" cellspacing="0" class="scale" style=
-                                            "font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #9b9b9b;"
-                                           width="265">
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- bg-color -->
+
+                    </td>
+                </tr>
+            </table>
+
+            <!-- services-3col-9 -->
+
+            <!-- splitter -->
+
+            <table border="0" width="800" align="center" cellpadding="0" cellspacing="0"     class="row" style="width:800px;max-width:800px;">
+                <tr>
+                    <td align="center" valign="top" class="petras-splitter">
+
+                        <!-- bg-color -->
+                        <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                            <tr>
+                                <td class="bg-color" align="center" valign="top"  bgcolor="#FFFFFF">
+
+                                    <!-- splitter with gaps -->
+                                    <table  border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
                                         <tr>
-                                            <td align="center" class="scale-center-both" height="70">
-                                                <a href="https://twitter.com/Nousmotards">
-                                                    <img src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/twitter.png" style="max-width: 265px;">
-                                                </a>
+                                            <td align="center" valign="middle" height="14" style="font-size:14px;line-height:14px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="middle" align="center" height="1" class="container-padding" style="font-size:1px;line-height:1px;">
+                                                <!-- line -->
+                                                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
+                                                    <tr>
+                                                        <td class="splitter" align="center" valign="middle" height="1"  bgcolor="#CCCCCC" style="font-size:1px;line-height:1px;">  &nbsp;  </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- line -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="middle" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!-- splitter with gaps -->
+
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- bg-color -->
+
+                    </td>
+                </tr>
+            </table>
+
+            <!-- splitter -->
+
+            <!-- quote-1 -->
+
+            <table border="0" width="800" align="center" cellpadding="0" cellspacing="0"     class="row" style="width:800px;max-width:800px;">
+                <tr>
+                    <td align="center" valign="top" class="petras-quote-1">
+
+                        <!-- bg-color -->
+                        <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                            <tr>
+                                <td class="bg-color" align="center" valign="top"  bgcolor="#FFFFFF">
+
+                                    <!-- space -->
+                                    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="50">  &nbsp;  </td>
+                                        </tr>
+                                    </table>
+                                    <!-- space -->
+
+                                    <!-- container -->
+                                    <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
+                                        <tr>
+                                            <td align="center" valign="top" class="container-padding">
+
+                                                <!-- image -->
+                                                <table  width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="width:100%;max-width:100%;">
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <img style="display:block;" src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/quote-1-icon.png"  border="0"  width="180" alt="picture" >
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- image -->
+                                                <!-- space -->
+                                                <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                                    <tr>
+                                                        <td valign="middle" align="center" height="10" style="font-size:10px;line-height:10px;">  &nbsp;  </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- space -->
+                                                <!-- text -->
+                                                <table  border="0" width="90%" cellpadding="0" cellspacing="0" align="center" style="width:90%; max-width:90%;">
+                                                    <tr>
+                                                        <td class="text center-text"      valign="middle" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:36px; line-height:40px; font-style:normal;font-weight:lighter; color:#000000;text-decoration:none;letter-spacing: 0px;">
+
+                                                            <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                            Driving a motorcycle is undoubtedly the most intense sensation that a machine can cause.
+                                                            <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- text -->
+                                                <!-- space -->
+                                                <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                    <tr>
+                                                        <td valign="middle" align="center" height="40">  &nbsp;  </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- space -->
+                                                <!-- name -->
+                                                <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                    <tr>
+                                                        <td class="name center-text"      valign="middle" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:14px; line-height:18px; font-style:normal;font-weight:bold;color:#b33631;text-decoration:none;letter-spacing: 0px;">
+
+                                                            <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                            - Paul Peczon
+                                                            <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- name -->
+
                                             </td>
                                         </tr>
                                     </table>
+                                    <!-- container -->
+
+                                    <!-- space -->
+                                    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="50">  &nbsp;  </td>
+                                        </tr>
+                                    </table>
+                                    <!-- space -->
+
                                 </td>
                             </tr>
                         </table>
+                        <!-- bg-color -->
+
                     </td>
                 </tr>
-
-                <tr>
-                    <td height="50">&nbsp;</td>
-                </tr>
             </table>
-        </td>
-    </tr>
-</table><!-- #### footer #### -->
 
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-       style="background-color: #1C1C1C" width="100%">
-    <tr>
-        <td>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale"
-                   style="background-color: #FFFFFF" width="620">
+            <!-- quote-1 -->
+
+            <!-- footer-8 -->
+
+            <table border="0" width="800" align="center" cellpadding="0" cellspacing="0"     class="row" style="width:800px;max-width:800px;">
                 <tr>
-                    <td align="center">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="scale" width="560">
-                            <tr>
-                                <td align="center"
-                                    style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 12px; color: #1c1c1c; line-height: 24px;">
-                                    <a href="https://next.nousmotards.com" style="color: #1c1c1c;text-decoration:none">About </a>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="https://blog.nousmotards.com" style="color: #1c1c1c;text-decoration:none">Blog</a>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="https://www.nousmotards.com" style="text-decoration: none; color: #1c1c1c;">Unsubscribe</a>
-                                </td>
-                            </tr>
+                    <td align="center" valign="top" class="petras-footer-8">
 
+                        <!-- bg-color -->
+                        <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
                             <tr>
-                                <td height="10">&nbsp;</td>
-                            </tr>
+                                <td class="bg-color" align="center" valign="top"  bgcolor="#333333">
 
-                            <tr>
-                                <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 12px; color: #1c1c1c; line-height: 18px;">
-                                    <a href="https://next.nousmotards.com" style="color: #1c1c1c;text-decoration:none">Ride together</a>
-                                </td>
-                            </tr>
+                                    <!-- gap -->
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="50">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!-- gap -->
 
-                            <tr>
-                                <td height="5" style="font-size: 1px;">&nbsp;</td>
-                            </tr>
+                                    <!-- container -->
+                                    <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
+                                        <tr>
+                                            <td align="center" valign="top" class="container-padding">
 
-                            <tr>
-                                <td align="center" style="font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif; font-size: 12px; color: #9b9a9c; line-height: 18px;">
-                                    Copyright © 2017. Nousmotards
+                                                <!-- title -->
+                                                <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                    <tr>
+                                                        <td class="title"      valign="middle" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:36px; line-height:42px; font-style:normal;font-weight:normal;color:#b33631;text-decoration:none;letter-spacing: 2px;">
+
+                                                            <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                            RIDE TOGETHER !
+                                                            <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- title -->
+                                                <!-- gap -->
+                                                <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                    <tr>
+                                                        <td valign="middle" align="center" height="20" style="font-size:20px;line-height:20px;">&nbsp;</td>
+                                                    </tr>
+                                                </table>
+                                                <!-- gap -->
+                                                <!-- text -->
+                                                <table  border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="width:100%; max-width:100%;">
+                                                    <tr>
+                                                        <td class="text"      valign="middle" align="center" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:18px; line-height:28px; font-style:normal;font-weight:lighter; color:#ffffff;text-decoration:none;letter-spacing: 0px;">
+
+                                                            <!--[if (gte mso 9)|(IE)]><font face="Arial"><![endif]-->
+                                                            <a href="https://www.nousmotards.com" style="color:#ffffff; text-decoration:none;">www.nousmotards.com</a>
+                                                            <!--[if (gte mso 9)|(IE)]></font><![endif]-->
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- text -->
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- container -->
+
+                                    <!-- gap -->
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="50">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!-- gap -->
+
                                 </td>
                             </tr>
                         </table>
+                        <!-- bg-color -->
+
                     </td>
                 </tr>
+            </table>
 
+            <!-- footer-8 -->
+
+            <!-- unsubscribe-5 -->
+
+            <table border="0" width="800" align="center" cellpadding="0" cellspacing="0"     class="row" style="width:800px;max-width:800px;">
                 <tr>
-                    <td height="50">&nbsp;</td>
+                    <td align="center" valign="top" class="petras-unsubscribe-5">
+
+                        <!-- bg-color -->
+                        <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                            <tr>
+                                <td class="bg-color" align="center" valign="top"  bgcolor="#ffffff">
+
+                                    <!-- gap -->
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!-- gap -->
+
+                                    <!-- container-3-columns -->
+                                    <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="row" style="width:600px;max-width:600px;">
+                                        <tr>
+                                            <td align="center" valign="top">
+
+                                                <!--[if (gte mso 9)|(IE)]><table border="0" cellpadding="0" cellspacing="0"><tr><td valign="middle"><![endif]-->
+
+                                                <!-- logo -->
+                                                <table width="150" border="0" cellpadding="0" cellspacing="0" align="left" class="row" style="width:150px;max-width:150px;">
+                                                    <tr>
+                                                        <td align="center" valign="middle">
+                                                            <table border="0" cellpadding="0" cellspacing="0" align="left" class="center-float">
+                                                                <tr>
+                                                                    <td class="logo" valign="middle" align="center">
+                                                                        <a href="#" target="_blank"><img style="display:block;" src="https://github.com/nousmotards/mail-template/raw/master/resources/images/welcome-mail/logo.png"  border="0"  width="100" alt="logo" ></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- logo -->
+
+                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
+
+                                                <!-- text -->
+                                                <table  border="0" width="300" cellpadding="0" cellspacing="0" align="left" class="row" style="width:300px; max-width:300px;">
+                                                    <tr>
+                                                        <td class="text center-text"      valign="middle" align="center" height="40" style="font-family:'Roboto',Arial,Helvetica,sans-serif; font-size:13px; line-height:15px; font-style:normal;font-weight:normal; color:#000000;text-decoration:none;letter-spacing: 0px;">
+                                                            © 2017. all rights reserved
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- text -->
+
+                                                <!--[if (gte mso 9)|(IE)]></td><td valign="middle"><![endif]-->
+
+
+                                                <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- container-3-columns -->
+
+                                    <!-- gap -->
+                                    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:100%;">
+                                        <tr>
+                                            <td valign="middle" align="center" height="10" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!-- gap -->
+
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- bg-color -->
+
+                    </td>
                 </tr>
             </table>
-        </td>
-    </tr>
 
-    <tr>
-        <td height="75">&nbsp;</td>
+            <!-- unsubscribe-5 -->
+
+        </td>
     </tr>
 </table>
+<!-- Main Container -->
+
 </body>
 </html>
