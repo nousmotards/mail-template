@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <title th:inline="text">[[${requester_first_name}]] asks you as a friend</title>
+    <title th:inline="text">[[${requester_first_name}]] est maintenant votre ami(e)</title>
     <style type="text/css">.ReadMsgBody { width: 100%; background-color: #ffffff; }
     .ExternalClass { width: 100%; background-color: #ffffff; }
     .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
@@ -59,7 +59,7 @@
                                         </tr>
                                         <!-- title -->
                                         <tr>
-                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:28px; color:#3b3b3b; font-weight: bold; letter-spacing:4px;" th:inline="text">[[${requester_first_name}]] asks you as a friend</td>
+                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:28px; color:#3b3b3b; font-weight: bold; letter-spacing:4px;" th:inline="text">[[${requester_first_name}]] est maintenant votre ami(e)</td>
                                         </tr>
                                         <!-- end title -->
                                         <tr>
@@ -84,7 +84,7 @@
                                             <td height="20"> </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:18px; color:#7f8c8d; line-height:20px;" th:inline="text">Hello [[${first_name}]], [[${requester_name}]] asked you as a friend. You can either accept or decline. Your refusal will not be notified ✌️</td>
+                                            <td align="center" style="font-family: 'Open Sans', Arial, sans-serif; font-size:18px; color:#7f8c8d; line-height:20px;" th:inline="text">Bonjour [[${first_name}]], [[${requester_name}]] fait maintenant partie de vos contacts. Vous avez accès à son profil et il sera au courant de chaque balade, événement, roadbook que vous proposerez ✌️</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -99,7 +99,7 @@
                                     <table align="center" bgcolor="#ef4036" border="0" cellpadding="0" cellspacing="0" class="textbutton" style=" border-radius:30px; box-shadow: 0px 1px 0px #ef4036;">
                                         <tbody>
                                         <tr>
-                                            <td align="center" color="#FFFFFF" height="55" style="font-family: 'Open Sans', Arial, sans-serif; font-size:18px; color:#FFFFFF !important; font-weight: bold;padding-left: 25px;padding-right: 25px;"><a th:href="${call_to_action_url}" style="color:#FFFFFF !important">show his profile</a></td>
+                                            <td align="center" color="#FFFFFF" height="55" style="font-family: 'Open Sans', Arial, sans-serif; font-size:18px; color:#FFFFFF !important; font-weight: bold;padding-left: 25px;padding-right: 25px;"><a th:href="${call_to_action_url}" style="color:#FFFFFF !important">voir son profil</a></td>
                                         </tr>
                                         </tbody>
                                     </table>
